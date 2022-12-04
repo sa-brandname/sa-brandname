@@ -193,15 +193,40 @@
         .font-white {
             color: #fff;
         }
+        .btn-market {
+            border: none;
+            border-radius: 20px;
+        }
         .btn-shopee {
-            background:red;
+            background:#ee4d2d;
         }
         .btn-line {
             background:#00B900;
         }
-        .btn-ig {
+        /* .btn-ig {
             background: #f902ba;
-        }
+        } */
+                 
+        .btn-ig {
+            background-image: linear-gradient(to right, #9d36a1 0%, #f98c20 51%, #fa901b  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-ig:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
         .btn-fb {
             background: #2a6ec8;
         }
@@ -247,12 +272,12 @@
             <div class="row">
                 <div class="col-12">
                     <img src="./brandname.jpg" class="rounded-circle mx-auto d-block image-logo">
-                    <h1 class="text-center pt-4 display-1" style="color: blueviolet;">SA_BRANDNAME</h1>
-                    <h4 class="text-center pt-4">รองเท้า กระเป๋าแบรนด์เนม คุณภาพไฮเอนด์ (Hi-End) ถูกที่สุด!!</h4>
+                    <h1 class="text-center pt-4 display-1" style="color: #000000;">SA_BRANDNAME</h1>
+                    <h4 class="text-center pt-4" style="color: blue;">รองเท้า กระเป๋าแบรนด์เนม คุณภาพไฮเอนด์ (Hi-End) ถูกที่สุด!!</h4>
                     <h4 class="text-center pt-4 display-3">ติดต่อสอบถาม ซื้อขาย ติดตามได้ที่ <br />line_id: @sabrand</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn-line btn-hover font-white w-100 m-4" onclick="clickLine()">
+                    <button type="button" class="btn-line btn-hover font-white w-100 m-4 btn-market" onclick="clickLine()">
                         <div class="d-flex justify-content-center">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/LINE_New_App_Icon_%282020-12%29.png/600px-LINE_New_App_Icon_%282020-12%29.png" class="image-ico">
                             <h1 class="display-3">Line</h1>
@@ -260,7 +285,7 @@
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn-shopee btn-hover font-white w-100 m-4" onclick="clickShopee()">
+                    <button type="button" class="btn-shopee btn-hover font-white w-100 m-4 btn-market" onclick="clickShopee()">
                         <div class="d-flex justify-content-center">
                             <img src="./shopee.png" class="image-ico">
                             <h1 class="display-3">Shopee</h1>
@@ -268,13 +293,13 @@
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4" onclick="clickIgBag()">
+                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4 btn-market" onclick="clickIgBag()">
                         <div class="d-flex justify-content-center">
                             <img src="./ig.png" class="image-ico">
                             <h1 class="display-3">IG กระเป๋า</h1>
                         </div>
                     </button>
-                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4" onclick="clickIgShoes()">
+                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4 btn-market" onclick="clickIgShoes()">
                         <div class="d-flex justify-content-center">
                             <img src="./ig.png" class="image-ico">
                             <h1 class="display-3">IG รองเท้า</h1>
@@ -282,7 +307,7 @@
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-dark w-100 m-4" onclick="clickTiktok()">
+                    <button type="button" class="btn btn-dark w-100 m-4 btn-market" onclick="clickTiktok()">
                         <div class="d-flex justify-content-center">
                             <img src="./tiktok.png" class="image-ico">
                             <h1 class="display-3">Tikok คลิก!!</h1>
@@ -290,7 +315,7 @@
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn-fb btn-hover font-white w-100 m-4" onclick="clickFb()">
+                    <button type="button" class="btn-fb btn-hover font-white w-100 m-4 btn-market" onclick="clickFb()">
                         <div class="d-flex justify-content-center">
                             <img src="./fb.png" class="image-ico">
                             <h1 class="display-3">Facebook</h1>
