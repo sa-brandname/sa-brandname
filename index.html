@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>247แบรนด์เนมสุดซอย</title>
+    <title>SA_BRANDNAME รองเท้า กระเป๋าแบรนด์เนม คุณภาพไฮเอนด์ (Hi-End)</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -17,7 +17,7 @@
 
         body {
             font-family: 'Noto Sans Thai Looped', sans-serif;
-            background: #eff0db;
+            background: #fffcf0;
             background-repeat: no-repeat;
         }
 
@@ -30,12 +30,12 @@
             margin: 10px;
         }
 
-        .container {
+        /* .container {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
-        }
+        } */
 
         .snowflake {
             color: #fff;
@@ -190,6 +190,24 @@
             font-family: 'Raleway', sans-serif;
             color: #000;
         }
+        .font-white {
+            color: #fff;
+        }
+        .btn-shopee {
+            background:red;
+        }
+        .btn-line {
+            background:#00B900;
+        }
+        .btn-ig {
+            background: #f902ba;
+        }
+        .btn-fb {
+            background: #2a6ec8;
+        }
+        .btn-hover:hover {
+            opacity: 0.9 !important;
+        }
     </style>
 </head>
 
@@ -229,23 +247,53 @@
             <div class="row">
                 <div class="col-12">
                     <img src="./brandname.jpg" class="rounded-circle mx-auto d-block image-logo">
-                    <h1 class="text-center pt-4 display-1" style="color: blueviolet;">247 แบรนด์เนมสุดซอย</h1>
-                    <h4 class="text-center pt-4 display-3">ติดต่อสอบถาม ซื้อขาย ติดตามได้ที่ <br />line_id: @247bn
-                    </h4>
+                    <h1 class="text-center pt-4 display-1" style="color: blueviolet;">SA_BRANDNAME</h1>
+                    <h4 class="text-center pt-4">รองเท้า กระเป๋าแบรนด์เนม คุณภาพไฮเอนด์ (Hi-End) ถูกที่สุด!!</h4>
+                    <h4 class="text-center pt-4 display-3">ติดต่อสอบถาม ซื้อขาย ติดตามได้ที่ <br />line_id: @sabrand</h4>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-success w-100 m-4" onclick="clickLine()">
+                    <button type="button" class="btn-line btn-hover font-white w-100 m-4" onclick="clickLine()">
                         <div class="d-flex justify-content-center">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/LINE_New_App_Icon_%282020-12%29.png/600px-LINE_New_App_Icon_%282020-12%29.png" class="image-ico">
-                            <h1 class="display-3">Line คลิก!!</h1>
+                            <h1 class="display-3">Line</h1>
+                        </div>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-shopee btn-hover font-white w-100 m-4" onclick="clickShopee()">
+                        <div class="d-flex justify-content-center">
+                            <img src="./shopee.png" class="image-ico">
+                            <h1 class="display-3">Shopee</h1>
+                        </div>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4" onclick="clickIgBag()">
+                        <div class="d-flex justify-content-center">
+                            <img src="./ig.png" class="image-ico">
+                            <h1 class="display-3">IG กระเป๋า</h1>
+                        </div>
+                    </button>
+                    <button type="button" class="btn-ig btn-hover font-white w-100 m-4" onclick="clickIgShoes()">
+                        <div class="d-flex justify-content-center">
+                            <img src="./ig.png" class="image-ico">
+                            <h1 class="display-3">IG รองเท้า</h1>
                         </div>
                     </button>
                 </div>
                 <div class="d-flex justify-content-center">
                     <button type="button" class="btn btn-dark w-100 m-4" onclick="clickTiktok()">
                         <div class="d-flex justify-content-center">
-                            <img src="https://www.freepnglogos.com/uploads/tik-tok-logo-png/tik-tok-android-application-logos-3.png" class="image-ico">
+                            <img src="./tiktok.png" class="image-ico">
                             <h1 class="display-3">Tikok คลิก!!</h1>
+                        </div>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn-fb btn-hover font-white w-100 m-4" onclick="clickFb()">
+                        <div class="d-flex justify-content-center">
+                            <img src="./fb.png" class="image-ico">
+                            <h1 class="display-3">Facebook</h1>
                         </div>
                     </button>
                 </div>
@@ -260,6 +308,18 @@
             }
             function clickTiktok() {
                 window.location.href = 'https://www.tiktok.com/@247brandnamesutsoi1'
+            }
+            function clickShopee() {
+                window.location.href = 'https://shopee.co.th/sa_brandname'
+            }
+            function clickIgBag() {
+                window.location.href = 'https://www.instagram.com/sa.brandname/'
+            }
+            function clickIgShoes() {
+                window.location.href = 'https://www.instagram.com/247brandnamesutsoi/'
+            }
+            function clickFb() {
+                window.location.href = 'https://www.facebook.com/profile.php?id=100087965018632'
             }
         </script>
 </body>
